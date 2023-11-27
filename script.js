@@ -1,10 +1,5 @@
 const form = document.getElementById("bookForm");
 
-let name = document.getElementById("name").value;
-let author = document.getElementById("author").value;
-let pages = document.getElementById("pages").value;
-let read = document.getElementById("read").value;
-
 let myLibrary = [];
 
 function Book(name, author, pages, read) {
@@ -17,6 +12,11 @@ function Book(name, author, pages, read) {
 form.onsubmit = function addBookToLibrary(e) {
   e.preventDefault();
 
-  myLibrary.push(new Book(name, this.author, this.pages, this.read));
+  let name = document.getElementById("name").value;
+  let author = document.getElementById("author").value;
+  let pages = document.getElementById("pages").value;
+  let read = document.getElementById("read").checked;
+
+  myLibrary.push(new Book(name, author, pages, read));
   console.log(myLibrary);
 };
