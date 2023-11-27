@@ -12,24 +12,26 @@
     </div>
 
     <div id="inputContainer">
-      <form action="">
-        <div>
-          <input type="text" placeholder="Name of Book" />
+      <form action="/index.html" id="bookForm">
+        <div id="nameContainer">
+          <input type="text" name="name" placeholder="Name of Book" />
         </div>
 
-        <div>
-          <input type="text" placeholder="Name of Author" />
+        <div id="authorContainer">
+          <input type="text" name="author" placeholder="Name of Author" />
         </div>
 
-        <div>
-          <input type="number" placeholder="Number of Pages" />
+        <div id="pagesContainer">
+          <input type="number" name="pages" placeholder="Number of Pages" />
         </div>
 
-        <div>
+        <div id="submitContainer">
           <input type="submit" value="Submit" />
         </div>
       </form>
     </div>
+
+    <div id="outputContainer"></div>
 
     <script src="script.js"></script>
   </body>

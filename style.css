@@ -1,3 +1,7 @@
 #form {
   display: flex;
 }
+
+.newEntry {
+  border: 1px solid black;
+}
