@@ -7,7 +7,8 @@ function Book(name, author, pages) {
 }
 
 function addBookToLibrary(variable) {
-  console.log(variable.name);
+  myLibrary.push(variable);
+  console.log(myLibrary);
 }
 
 const book1 = new Book("book1", "qwrty", 103);
