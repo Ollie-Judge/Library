@@ -2,10 +2,11 @@
   display: flex;
 }
 
-.newEntry {
+.bookContainer {
   border: 1px solid black;
+  height: 250px;
 }
 
-.outputContainer {
-  visibility: hidden;
+#outputContainer {
+  border: 2px solid red;
 }
