@@ -5,3 +5,7 @@
 .newEntry {
   border: 1px solid black;
 }
+
+.outputContainer {
+  visibility: hidden;
+}
