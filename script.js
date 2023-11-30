@@ -46,6 +46,11 @@ form.onsubmit = function addBookToLibrary(e) {
   displayItemAdded();
 };
 
+let deleteBook = (e) => {
+  const parent = e.target.parentElement;
+  parent.remove();
+};
+
 myLibrary.forEach((book) => {
   const outputContainer = document.getElementById("outputContainer");
 
@@ -80,6 +85,7 @@ myLibrary.forEach((book) => {
   const deleteButton = document.createElement("input");
   deleteButton.setAttribute("type", "button");
   deleteButton.value = "Delete";
+  deleteButton.addEventListener("click", deleteBook);
   bookContainer.appendChild(deleteButton);
 
   console.log("book", book, book.name);
@@ -126,5 +132,6 @@ const displayItemAdded = () => {
   const deleteButton = document.createElement("input");
   deleteButton.setAttribute("type", "button");
   deleteButton.value = "Delete";
+  deleteButton.addEventListener("click", deleteBook);
   bookContainer.appendChild(deleteButton);
 };
