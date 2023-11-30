@@ -2,14 +2,17 @@
   display: flex;
 }
 
-.bookContainer {
-  border: 1px solid black;
-  height: 250px;
-  width: 15%;
-}
-
 #outputContainer {
   border: 2px solid red;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.bookContainer {
+  border: 1px solid black;
+  height: 250px;
+  width: 20%;
+  box-sizing: border-box;
+  margin: 15px;
 }
