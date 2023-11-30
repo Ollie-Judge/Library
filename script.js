@@ -68,6 +68,10 @@ myLibrary.forEach((book) => {
   para2.appendChild(bookPages);
   bookContainer.appendChild(para2);
 
+  const readLabel = document.createElement("label");
+  readLabel.innerHTML = "Read";
+  bookContainer.appendChild(readLabel);
+
   const checkBox = document.createElement("input");
   checkBox.setAttribute("type", "checkbox");
   checkBox.setAttribute("type", "checkbox");

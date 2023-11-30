@@ -1,5 +1,14 @@
+h1 {
+  text-align: center;
+}
+
 #form {
   display: flex;
+}
+
+#inputContainer {
+  text-align: center;
+  margin: 25px;
 }
 
 #outputContainer {
