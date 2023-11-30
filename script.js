@@ -74,9 +74,13 @@ myLibrary.forEach((book) => {
 
   const checkBox = document.createElement("input");
   checkBox.setAttribute("type", "checkbox");
-  checkBox.setAttribute("type", "checkbox");
   checkBox.checked = book.read;
   bookContainer.appendChild(checkBox);
+
+  const deleteButton = document.createElement("input");
+  deleteButton.setAttribute("type", "button");
+  deleteButton.value = "Delete";
+  bookContainer.appendChild(deleteButton);
 
   console.log("book", book, book.name);
 });
@@ -109,9 +113,18 @@ const displayItemAdded = () => {
   para2.appendChild(bookPages);
   bookContainer.appendChild(para2);
 
+  const readLabel = document.createElement("label");
+  readLabel.innerHTML = "Read";
+  bookContainer.appendChild(readLabel);
+
   const checkBox = document.createElement("input");
   checkBox.setAttribute("type", "checkbox");
   checkBox.setAttribute("type", "checkbox");
   checkBox.checked = myLibrary[myLibrary.length - 1].read;
   bookContainer.appendChild(checkBox);
+
+  const deleteButton = document.createElement("input");
+  deleteButton.setAttribute("type", "button");
+  deleteButton.value = "Delete";
+  bookContainer.appendChild(deleteButton);
 };
